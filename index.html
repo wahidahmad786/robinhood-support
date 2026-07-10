@@ -1,0 +1,939 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robinhood Support & Helpline Center</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="/script.js"></script>
+  </head>
+  <body>
+
+    <!-- --- DESKTOP / MOBILE STICKY HEADER --- -->
+    <header class="header-sticky">
+      <div class="container header-container">
+        
+        <!-- Logo -->
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <div style="width: 2rem; height: 2rem; background-color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ffffff;">
+            <!-- Robinhood Feather Icon -->
+            <svg viewBox="0 0 24 24" fill="none" style="width: 1.25rem; height: 1.25rem;" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.5 3C18.25 3.5 13.5 6 9.5 11C7 14.125 5.5 17.5 5 19.5C6.75 19.5 10 18.25 12.5 16C16.5 12.5 18.5 7.75 19 5.5C19.25 4.5 19.5 3.5 19.5 3Z" fill="currentColor"/>
+              <path d="M5.5 21C4.25 21.25 3 21.5 2 21.5C3.25 19.25 4.5 17 5 15.5C4.75 17.5 5 19.5 5.5 21Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <span style="font-size: 1.25rem; font-weight: 700; letter-spacing: -0.025em; color: var(--primary);">Robinhood</span>
+          <span style="font-size: 1rem; font-weight: 500; color: var(--slate-400); margin-left: 0.5rem;" class="nav-links">Support</span>
+        </div>
+
+        <!-- Desktop Nav Links -->
+        <nav class="nav-links">
+          <a href="#support-options" class="nav-link">Help Center</a>
+          <a href="#knowledge-base" class="nav-link">Help Articles</a>
+          <a href="#interactive-tools" class="nav-link">Live Chat &amp; Callback</a>
+          <a href="#faq-section" class="nav-link">FAQs</a>
+        </nav>
+
+        <!-- Desktop Call Helpline CTA -->
+        <div class="nav-actions-desktop">
+          <a href="tel:+18887567626" class="btn btn-primary" style="padding: 0.375rem 1rem;">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Call Helpline: (888) 756-7626</span>
+          </a>
+          <button class="btn btn-secondary btn-circle copy-btn" title="Copy phone number to clipboard">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile menu toggler buttons -->
+        <div style="display: flex; gap: 0.5rem; align-items: center;" class="mobile-menu-btn">
+          <a href="tel:+18887567626" class="btn btn-primary btn-circle" style="width: 2.25rem; height: 2.25rem; box-shadow: var(--shadow-md);">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </a>
+          <button id="mobile-menu-btn" class="mobile-menu-btn" style="padding: 0.5rem;">
+            <svg id="menu-icon-open" class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg id="menu-icon-close" class="svg-icon" style="display: none;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Mobile drawer menu overlay -->
+      <div id="mobile-nav-drawer" class="mobile-nav-drawer">
+        <a href="#support-options" class="mobile-nav-link">Support Options</a>
+        <a href="#knowledge-base" class="mobile-nav-link">Help Articles</a>
+        <a href="#interactive-tools" class="mobile-nav-link">Live Chat &amp; Callback</a>
+        <a href="#faq-section" class="mobile-nav-link">FAQs</a>
+        <div class="mobile-nav-action-box">
+          <a href="tel:+18887567626" class="btn btn-primary" style="width: 100%; padding: 0.75rem;">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>Call Support: (888) 756-7626</span>
+          </a>
+          <button class="btn btn-secondary copy-btn" style="width: 100%; padding: 0.625rem;">
+            <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            <span>Copy Helpline Number</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- --- HERO SECTION WITH CUSTOM POLISHED LIGHT DESIGN --- -->
+    <section class="hero-section">
+      <div class="hero-pattern"></div>
+      
+      <div class="container" style="position: relative; z-index: 10;">
+        <div class="hero-pill">
+          <!-- Robinhood Feather -->
+          <svg viewBox="0 0 24 24" fill="none" style="width: 1.25rem; height: 1.25rem; color: var(--primary);" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.5 3C18.25 3.5 13.5 6 9.5 11C7 14.125 5.5 17.5 5 19.5C6.75 19.5 10 18.25 12.5 16C16.5 12.5 18.5 7.75 19 5.5C19.25 4.5 19.5 3.5 19.5 3Z" fill="currentColor"/>
+            <path d="M5.5 21C4.25 21.25 3 21.5 2 21.5C3.25 19.25 4.5 17 5 15.5C4.75 17.5 5 19.5 5.5 21Z" fill="currentColor"/>
+          </svg>
+          <span class="hero-pill-text">Robinhood Helpline Support</span>
+        </div>
+
+        <h1 class="hero-title">How can we help you?</h1>
+        <p class="hero-subtitle">
+          Get 24/7 dedicated assistance regarding account recovery, instant cash transfers, trade settlements, and technical support.
+        </p>
+
+        <!-- Interactive Search engine -->
+        <div class="search-container">
+          <svg class="svg-icon search-icon-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input
+            type="text"
+            id="search-input"
+            class="search-input"
+            placeholder="Search support articles (e.g. login, deposits, helpline)..."
+          />
+          <button id="search-clear-btn" class="search-clear-btn">Clear</button>
+        </div>
+
+        <!-- Popular suggested searches -->
+        <div class="suggestions-container">
+          <span class="suggestion-label">Suggested:</span>
+          <button class="suggestion-tag" data-term="helpline">Helpline Phone Number</button>
+          <button class="suggestion-tag" data-term="restricted">Locked Account</button>
+          <button class="suggestion-tag" data-term="withdraw">Withdrawals</button>
+          <button class="suggestion-tag" data-term="crypto">Crypto Wallets</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --- PROMINENT DIRECT HELPLINE BANNER --- -->
+    <div class="container" style="padding: 0 1rem;">
+      <section class="helpline-banner">
+        <div class="banner-flex">
+          
+          <div class="banner-left">
+            <span class="banner-badge">Contact Our Experts</span>
+            <h2 class="banner-title">We're here for you 24/7</h2>
+            <p class="banner-subtitle">
+              Get the answers you need about your money, security, and the Robinhood platform.
+            </p>
+          </div>
+
+          <div class="banner-right">
+            <div class="banner-card">
+              <p class="banner-card-label">Robinhood Helpline</p>
+              <a href="tel:+18887567626" class="banner-card-phone">(888) 756-7626</a>
+            </div>
+
+            <div class="banner-card">
+              <p class="banner-card-label">Support Number</p>
+              <a href="tel:+18887567626" class="banner-card-phone">(888) 756-7626</a>
+            </div>
+
+            <div style="display: flex; align-items: center; justify-content: center;">
+              <a href="tel:+18887567626" class="btn btn-primary btn-pill" style="padding: 0.75rem 2rem; font-size: 1rem; box-shadow: var(--shadow-lg);">
+                Dial Now
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- --- MAIN INTERACTIVE CONTAINER & SHIELD STATS --- -->
+    <main class="container">
+      
+      <!-- Three Category Cards Grid -->
+      <div class="category-grid">
+        <div class="category-card" data-category="account">
+          <div class="category-icon-box">
+            <svg style="width: 1.5rem; height: 1.5rem;" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+            </svg>
+          </div>
+          <h3 class="category-title">Account Information</h3>
+          <p class="category-desc">Manage your profile, documents, and security settings.</p>
+        </div>
+
+        <div class="category-card" data-category="transfers">
+          <div class="category-icon-box">
+            <svg style="width: 1.5rem; height: 1.5rem;" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+            </svg>
+          </div>
+          <h3 class="category-title">Transfers &amp; Payments</h3>
+          <p class="category-desc">Everything about bank links, deposits, and withdrawals.</p>
+        </div>
+
+        <div class="category-card" data-category="trading">
+          <div class="category-icon-box">
+            <svg style="width: 1.5rem; height: 1.5rem;" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6h-6z"/>
+            </svg>
+          </div>
+          <h3 class="category-title">Investing &amp; Trading</h3>
+          <p class="category-desc">Learn how to trade stocks, ETFs, options, and crypto.</p>
+        </div>
+      </div>
+
+      <!-- Support Grid - Bento Box Tools & Interactive simulations -->
+      <div id="support-options" class="support-bento">
+        
+        <!-- LEFT SIDE: Smartphone UI mockup + Security Advantages -->
+        <div class="bento-left">
+          
+          <div class="smartphone-mockup-card">
+            <div class="mockup-header">
+              <div class="mockup-header-left">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                  <line x1="12" y1="18" x2="12.01" y2="18"/>
+                </svg>
+                <span class="mockup-badge">Interactive Interface</span>
+              </div>
+              <span class="pulse-dot"></span>
+            </div>
+
+            <!-- Mobile app screen simulated layout -->
+            <div class="mockup-main">
+              <div class="phone-device">
+                <div class="phone-sensor">
+                  <span class="phone-sensor-bar"></span>
+                  <span class="phone-sensor-dot"></span>
+                </div>
+
+                <div class="phone-screen">
+                  <div class="phone-status-bar">
+                    <span>9:41</span>
+                    <div class="phone-indicators">
+                      <span>📶</span>
+                      <span>🔋</span>
+                    </div>
+                  </div>
+
+                  <div class="phone-brand-header">
+                    <span>ROAR</span>
+                    <span class="phone-live-indicator">🟢 LIVE</span>
+                  </div>
+
+                  <h3 class="phone-stock-name">Tiger Corp</h3>
+                  <div class="phone-stock-price">$11.54</div>
+                  <div class="phone-stock-trend">
+                    <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="width: 0.75rem; height: 0.75rem;">
+                      <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                      <polyline points="17 6 23 6 23 12"/>
+                    </svg>
+                    <span>+$0.82 (7.65%) Today</span>
+                  </div>
+
+                  <!-- Mini Chart -->
+                  <div class="phone-chart-container">
+                    <svg style="width: 100%; height: 100%; color: var(--primary);" viewBox="0 0 200 100" preserveAspectRatio="none">
+                      <path d="M0,80 C30,75 50,45 80,50 C110,55 130,10 160,20 C180,25 190,5 200,8" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+                      <path d="M0,80 C30,75 50,45 80,50 C110,55 130,10 160,20 C180,25 190,5 200,8 L200,100 L0,100 Z" fill="url(#iphone-grad)" opacity="0.15"></path>
+                      <defs>
+                        <linearGradient id="iphone-grad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stopColor="#00c805" />
+                          <stop offset="100%" stopColor="transparent" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+                  </div>
+
+                  <div class="phone-timeframes">
+                    <span class="timeframe-active">1D</span>
+                    <span>1W</span>
+                    <span>1M</span>
+                    <span>3M</span>
+                    <span>1Y</span>
+                    <span>ALL</span>
+                  </div>
+
+                  <div class="phone-stats">
+                    <div class="phone-stats-title">Stats Details</div>
+                    <div class="phone-stat-row">
+                      <span class="phone-stat-label">Open</span>
+                      <span>$10.72</span>
+                    </div>
+                    <div class="phone-stat-row">
+                      <span class="phone-stat-label">High</span>
+                      <span>$11.85</span>
+                    </div>
+                    <div class="phone-stat-row">
+                      <span class="phone-stat-label">Low</span>
+                      <span>$10.65</span>
+                    </div>
+                    <div class="phone-stat-row">
+                      <span class="phone-stat-label">Volume</span>
+                      <span>12.4M</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="mockup-brand">
+                <div class="mockup-logo-box">
+                  <!-- Robinhood Feather -->
+                  <svg viewBox="0 0 24 24" fill="none" style="width: 2rem; height: 2rem; color: var(--primary);" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.5 3C18.25 3.5 13.5 6 9.5 11C7 14.125 5.5 17.5 5 19.5C6.75 19.5 10 18.25 12.5 16C16.5 12.5 18.5 7.75 19 5.5C19.25 4.5 19.5 3.5 19.5 3Z" fill="currentColor"/>
+                    <path d="M5.5 21C4.25 21.25 3 21.5 2 21.5C3.25 19.25 4.5 17 5 15.5C4.75 17.5 5 19.5 5.5 21Z" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h4 class="mockup-brand-title">robinhood</h4>
+                <p class="mockup-brand-desc">
+                  Experience commission-free investing on our industry-leading mobile application.
+                </p>
+              </div>
+
+            </div>
+
+            <div class="mockup-info-section">
+              <h3 class="mockup-info-title">In-App Live Verification</h3>
+              <p class="mockup-info-desc">
+                The visual mockup above represents our secure mobile dashboard. When you dial our toll-free Helpline, our agents can issue secure authentication codes right to your Robinhood device.
+              </p>
+              <div class="mockup-btn-group">
+                <a href="tel:+18887567626" class="btn btn-primary">
+                  <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Call Helpline</span>
+                </a>
+                <button class="btn btn-outline copy-btn">
+                  <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                  </svg>
+                  <span class="btn-text">Copy Number</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Encrypted Core Shield details card -->
+          <div class="shield-card">
+            <div class="shield-header">
+              <div class="shield-icon-box">
+                <svg class="svg-icon" style="color: var(--primary); width: 1.5rem; height: 1.5rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="shield-title">Security Guaranteed</h3>
+                <p class="shield-subtitle">100% SECURE &amp; ENCRYPTED CHANNELS</p>
+              </div>
+            </div>
+
+            <div class="shield-list">
+              <div class="shield-item">
+                <div class="shield-check-icon">
+                  <svg class="svg-icon" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="shield-text-bold">Direct Verification:</span> We use dual-factor token prompts to verify account ownership instantly.
+                </div>
+              </div>
+
+              <div class="shield-item">
+                <div class="shield-check-icon">
+                  <svg class="svg-icon" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="shield-text-bold">Encrypted Lines:</span> All phone audio is routed through fully secured telephonic trunks to protect sensitive credentials.
+                </div>
+              </div>
+
+              <div class="shield-item">
+                <div class="shield-check-icon">
+                  <svg class="svg-icon" style="width: 1rem; height: 1rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="shield-text-bold">Zero-Fee Calls:</span> Both of our helplines are completely toll-free from any US or international line.
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT SIDE: Interactive forms (Callback & Chat Simulator) -->
+        <div class="bento-right">
+          
+          <div id="interactive-tools" style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
+            
+            <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; align-items: start;" class="bento-right-split">
+              
+              <!-- Box 1: Callback Scheduler -->
+              <div class="callback-card">
+                <div>
+                  <div class="callback-header">
+                    <div class="callback-icon-box">
+                      <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                      </svg>
+                    </div>
+                    <span class="wait-badge">Avg. Wait: 1 Min</span>
+                  </div>
+
+                  <h3 class="callback-title">Request a Live Callback</h3>
+                  <p class="callback-desc">
+                    Leave your contact details and an account security specialist will dial you immediately.
+                  </p>
+
+                  <!-- Callback Form -->
+                  <form id="callback-form" style="margin-top: 1.25rem;">
+                    <div class="form-group">
+                      <label class="form-label" for="callback-name">Your Name</label>
+                      <input type="text" id="callback-name" class="form-input" required placeholder="Jane Doe" />
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="callback-phone">Phone Number</label>
+                      <input type="tel" id="callback-phone" class="form-input" required placeholder="+1 (555) 000-0000" />
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label" for="callback-topic">Topic</label>
+                      <select id="callback-topic" class="form-select">
+                        <option>Account Access</option>
+                        <option>Trading &amp; Margin Issues</option>
+                        <option>Deposits &amp; Withdrawals</option>
+                        <option>Crypto Wallet Help</option>
+                        <option>General Inquiries</option>
+                      </select>
+                    </div>
+
+                    <button type="submit" id="callback-submit-btn" class="form-submit-btn">
+                      <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12 6 12 12 16 14"/>
+                      </svg>
+                      <span>Schedule Callback</span>
+                    </button>
+                  </form>
+
+                  <!-- Callback success screen state -->
+                  <div id="callback-success" style="display: none;">
+                    <div class="callback-success-container">
+                      <div class="success-check-icon">
+                        <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <polyline points="20 6 9 17 4 12"/>
+                        </svg>
+                      </div>
+                      <h4 class="success-title">Callback Initialized!</h4>
+                      <p class="success-desc">
+                        <span id="sched-name" class="success-phone-highlight">User</span>, you are now #1 in line. Our specialized support desk will dial you at <span id="sched-phone" class="success-phone-highlight">+1 (555) 000-0000</span> in approximately 30 seconds.
+                      </p>
+                      
+                      <div class="success-backups">
+                        <p class="success-backup-label">Urgent? Dial the hotline directly</p>
+                        <a href="tel:+18887567626" class="success-backup-phone">(888) 756-7626</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div style="font-size: 0.75rem; color: var(--slate-400); font-weight: 500; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--slate-100);">
+                  We verify your account details during the voice call.
+                </div>
+              </div>
+
+              <!-- Box 2: Live Chat Simulator -->
+              <div class="chat-card">
+                <div class="chat-agent-profile">
+                  <div class="chat-agent-info">
+                    <div class="chat-agent-avatar">
+                      <!-- Chat bubble -->
+                      <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 class="chat-agent-name">Robin Support Agent</h3>
+                      <div class="chat-agent-status">
+                        <span class="chat-status-pulse"></span>
+                        <span class="chat-status-text">Active 24/7</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Chat Viewport messages area -->
+                <div id="chat-viewport" class="chat-viewport">
+                  <div class="chat-msg-row bot">
+                    <div class="chat-bubble">
+                      <p>Hello! Welcome to Robinhood Support. I am your automated assistant Robin. How can I assist you with your investing account today?</p>
+                      <span class="chat-time">Just now</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Quick selection helper triggers -->
+                <div class="chat-quick-questions">
+                  <p class="quick-questions-label">Quick Questions:</p>
+                  <div class="quick-questions-flex">
+                    <button class="quick-question-btn">Helpline Number?</button>
+                    <button class="quick-question-btn">Locked Account?</button>
+                    <button class="quick-question-btn">Pending Withdraw?</button>
+                  </div>
+                </div>
+
+                <!-- Input controller form -->
+                <form id="chat-form" class="chat-form">
+                  <input type="text" id="chat-input" class="chat-input" required placeholder="Type a message..." />
+                  <button type="submit" class="chat-send-btn">
+                    <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <line x1="22" y1="2" x2="11" y2="13"/>
+                      <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                    </svg>
+                  </button>
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Helpline direct links footer of bento -->
+          <div class="bento-accent-row">
+            <div class="accent-row-text">
+              <h4 class="accent-row-title">Official Helpline &amp; Call Support</h4>
+              <p class="accent-row-desc">
+                Call our toll-free customer desk anytime to resolve trading errors, check account status, or update your information.
+              </p>
+            </div>
+            <div class="accent-row-btns">
+              <a href="tel:+18887567626" class="btn btn-primary">
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>Robinhood Helpline: (888) 756-7626</span>
+              </a>
+              <a href="tel:+18887567626" class="btn btn-outline" style="font-size: 0.75rem;">
+                <span>Support Line: (888) 756-7626</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- --- KNOWLEDGE BASE / HELP ARTICLES SECTION --- -->
+      <section id="knowledge-base" class="kb-section">
+        <div class="kb-header">
+          <div>
+            <h2 class="kb-title">Official Support Articles</h2>
+            <p class="kb-desc">Browse detailed articles with step-by-step resolution workflows.</p>
+          </div>
+
+          <!-- Quick category filters -->
+          <div id="tab-container" class="filter-tabs">
+            <button class="filter-tab active" data-category="all">All Help Topics</button>
+            <button class="filter-tab" data-category="account">Account &amp; Login</button>
+            <button class="filter-tab" data-category="trading">Trading &amp; Investing</button>
+            <button class="filter-tab" data-category="transfers">Deposits &amp; Withdrawals</button>
+            <button class="filter-tab" data-category="security">Security &amp; Verification</button>
+            <button class="filter-tab" data-category="crypto">Robinhood Crypto</button>
+          </div>
+        </div>
+
+        <!-- Render grid of filtered articles (using JavaScript) -->
+        <div id="articles-grid" class="articles-grid"></div>
+      </section>
+
+      <!-- --- CUSTOM BANNER SHOWCASES (LIME BG LOGO & ACCENTS) --- -->
+      <section style="margin-top: 5rem;">
+        <div class="showcase-grid">
+          
+          <!-- Mockup Image 2 Card (Lime green card with black logo text) -->
+          <div class="showcase-card-left">
+            <div class="showcase-header">
+              <div class="showcase-logo-box">
+                <!-- Robinhood Feather -->
+                <svg viewBox="0 0 24 24" fill="none" style="width: 2rem; height: 2rem; color: var(--accent-lime);" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19.5 3C18.25 3.5 13.5 6 9.5 11C7 14.125 5.5 17.5 5 19.5C6.75 19.5 10 18.25 12.5 16C16.5 12.5 18.5 7.75 19 5.5C19.25 4.5 19.5 3.5 19.5 3Z" fill="currentColor"/>
+                  <path d="M5.5 21C4.25 21.25 3 21.5 2 21.5C3.25 19.25 4.5 17 5 15.5C4.75 17.5 5 19.5 5.5 21Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <div class="showcase-badge-active">
+                <span class="badge-active-pulse"></span>
+                <span class="badge-active-text">Official Banner</span>
+              </div>
+            </div>
+
+            <div class="showcase-body">
+              <h4 class="showcase-title-black">robinhood</h4>
+              <p class="showcase-desc-black">
+                Simplifying investment systems globally with custom analytics, modern indicators, and direct priority helpline assistance.
+              </p>
+            </div>
+          </div>
+
+          <!-- Mockup Image 4 Card (Square feather launcher preview) -->
+          <div class="showcase-card-right">
+            <div class="launcher-app-icon">
+              <!-- Feather icon in black -->
+              <svg viewBox="0 0 24 24" fill="none" style="width: 4rem; height: 4rem; color: #000000;" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5 3C18.25 3.5 13.5 6 9.5 11C7 14.125 5.5 17.5 5 19.5C6.75 19.5 10 18.25 12.5 16C16.5 12.5 18.5 7.75 19 5.5C19.25 4.5 19.5 3.5 19.5 3Z" fill="currentColor"/>
+                <path d="M5.5 21C4.25 21.25 3 21.5 2 21.5C3.25 19.25 4.5 17 5 15.5C4.75 17.5 5 19.5 5.5 21Z" fill="currentColor"/>
+              </svg>
+            </div>
+
+            <div class="showcase-right-text">
+              <span class="launcher-meta">App Launcher Asset</span>
+              <h3 class="showcase-right-title">The Feather Icon</h3>
+              <p class="showcase-right-desc">
+                Look for our signature lime-green launcher icon on your smartphone home screen. If you ever require urgent voice support, simply press and hold the launcher icon to quickly access our 24/7 Support line.
+              </p>
+              <a href="tel:+18887567626" class="article-urgent-link">
+                <span>Learn about voice shortcuts</span>
+                <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- --- ONLINE SUPPORT TICKET SUBMISSION --- -->
+      <section class="ticket-section">
+        
+        <!-- Left details banner -->
+        <div class="ticket-banner">
+          <div class="ticket-banner-pattern"></div>
+          
+          <div class="ticket-banner-top">
+            <div class="ticket-banner-icon">
+              <!-- Feather Icon -->
+              <svg viewBox="0 0 24 24" fill="none" style="width: 2rem; height: 2rem; color: #ffffff;" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5 3C18.25 3.5 13.5 6 9.5 11C7 14.125 5.5 17.5 5 19.5C6.75 19.5 10 18.25 12.5 16C16.5 12.5 18.5 7.75 19 5.5C19.25 4.5 19.5 3.5 19.5 3Z" fill="currentColor"/>
+                <path d="M5.5 21C4.25 21.25 3 21.5 2 21.5C3.25 19.25 4.5 17 5 15.5C4.75 17.5 5 19.5 5.5 21Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="ticket-banner-title">Submit an Online Support Ticket</h3>
+            <p class="ticket-banner-desc">
+              If your issue does not require instant voice resolution, submit an encrypted ticket here. Our financial compliance desk will inspect your case and respond via email within 24 hours.
+            </p>
+          </div>
+
+          <div class="ticket-banner-bottom">
+            <h4 class="ticket-banner-bottom-title">Helpline Direct Backups</h4>
+            <div class="ticket-banner-contact-row">
+              <svg class="svg-icon" style="color: var(--primary);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Robinhood Helpline: (888) 756-7626</span>
+            </div>
+            <div class="ticket-banner-contact-row">
+              <svg class="svg-icon" style="color: var(--primary);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span>Support Desk: (888) 756-7626</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Form panel -->
+        <div class="ticket-form-container">
+          
+          <form id="ticket-form">
+            <div class="ticket-grid-row">
+              <div class="ticket-form-group">
+                <label class="ticket-form-label" for="ticket-name">Full Name</label>
+                <input type="text" id="ticket-name" class="ticket-form-input" required placeholder="Jane Doe" />
+              </div>
+              <div class="ticket-form-group">
+                <label class="ticket-form-label" for="ticket-email">Email Address</label>
+                <input type="email" id="ticket-email" class="ticket-form-input" required placeholder="jane.doe@example.com" />
+              </div>
+            </div>
+
+            <div class="ticket-grid-row">
+              <div class="ticket-form-group">
+                <label class="ticket-form-label" for="ticket-topic">Topic</label>
+                <select id="ticket-topic" class="ticket-form-select">
+                  <option>General Support</option>
+                  <option>Account Lock / Password Reset</option>
+                  <option>Deposit &amp; ACH Delays</option>
+                  <option>Margin Calls &amp; Balances</option>
+                  <option>Crypto Wallets</option>
+                </select>
+              </div>
+              <div class="ticket-form-group">
+                <label class="ticket-form-label" for="ticket-username">Robinhood Username (Optional)</label>
+                <input type="text" id="ticket-username" class="ticket-form-input" placeholder="@janedoe" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="ticket-form-label" for="ticket-message">How can we help? Explain in detail</label>
+              <textarea id="ticket-message" rows="4" class="ticket-form-textarea" required placeholder="Provide details about your inquiry, account issues, or transfer codes..."></textarea>
+            </div>
+
+            <button type="submit" class="ticket-submit-btn">Submit Secure Ticket</button>
+          </form>
+
+          <!-- Ticket Success state -->
+          <div id="ticket-success" style="display: none;" class="ticket-success">
+            <div class="ticket-success-icon">
+              <svg class="svg-icon" style="width: 2rem; height: 2rem;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <h4 class="ticket-success-title">Ticket Submitted Successfully!</h4>
+            <p class="ticket-success-desc">
+              Thank you, <span id="ticket-success-name" style="font-weight: 600; color: var(--slate-900);">User</span>. Your support ticket regarding <span id="ticket-success-topic" style="font-weight: 600; color: var(--slate-900);">Topic</span> has been securely lodged under reference ID <span id="ticket-ref-id" class="ref-id-highlight">#RH-000000</span>.
+            </p>
+
+            <div class="ticket-success-card">
+              <p class="ticket-success-card-title">Need Instant Response Instead?</p>
+              <p class="ticket-success-card-desc">
+                Emails can take up to 24 hours to review. For immediate resolution regarding blocked trades, restricted access, or settlement questions, speak directly to our team:
+              </p>
+              
+              <div class="ticket-success-card-btns">
+                <a href="tel:+18887567626" class="success-direct-call">
+                  <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>(888) 756-7626</span>
+                </a>
+                <span class="success-divider">|</span>
+                <button id="reset-ticket-btn" class="submit-another-btn">Submit another ticket</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- --- FAQ ACCORDION SECTION --- -->
+      <section id="faq-section" class="faq-section">
+        <div class="faq-title-container">
+          <h2 class="faq-section-title">Frequently Asked Questions (FAQ)</h2>
+          <p class="faq-section-desc">
+            Find quick, direct answers regarding contact protocols, support operating hours, and security parameters.
+          </p>
+        </div>
+
+        <div class="faq-list">
+          
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span class="faq-question">What is the official Robinhood Support Helpline?</span>
+              <svg class="svg-icon faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-panel">
+              <p class="faq-answer">The official, toll-free Robinhood Helpline is (888) 756-7626. It is staffed 24 hours a day, 7 days a week by certified support professionals who can assist you with account recovery, trading issues, funds settling, or document verification instantly.</p>
+              <div class="faq-panel-footer">
+                <span>Still have questions?</span>
+                <a href="tel:+18887567626" class="faq-panel-call-link">
+                  <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Call Helpline: (888) 756-7626</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span class="faq-question">Is there a direct Support number to speak with a human?</span>
+              <svg class="svg-icon faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-panel">
+              <p class="faq-answer">Yes, you can bypass interactive menus and connect directly with a live human specialist by dialing our official Support number (888) 756-7626. Our support lines are fully operational 24/7.</p>
+              <div class="faq-panel-footer">
+                <span>Still have questions?</span>
+                <a href="tel:+18887567626" class="faq-panel-call-link">
+                  <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Call Helpline: (888) 756-7626</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span class="faq-question">How do I resolve a temporarily restricted or locked account?</span>
+              <svg class="svg-icon faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-panel">
+              <p class="faq-answer">If your account is locked or restricted, please call the Robinhood Helpline at (888) 756-7626 immediately. A representative will safely walk you through security verification steps and unlock your account in real time.</p>
+              <div class="faq-panel-footer">
+                <span>Still have questions?</span>
+                <a href="tel:+18887567626" class="faq-panel-call-link">
+                  <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Call Helpline: (888) 756-7626</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span class="faq-question">How do I get help with deposits, bank links, and cash withdrawals?</span>
+              <svg class="svg-icon faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-panel">
+              <p class="faq-answer">For immediate help with a failed deposit, bank linking error, or pending cash withdrawal, call our financial operations line at (888) 756-7626 to check transaction codes and resolve settlement blocks.</p>
+              <div class="faq-panel-footer">
+                <span>Still have questions?</span>
+                <a href="tel:+18887567626" class="faq-panel-call-link">
+                  <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Call Helpline: (888) 756-7626</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-btn">
+              <span class="faq-question">Can I place stock trades or options orders over the phone?</span>
+              <svg class="svg-icon faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"/>
+              </svg>
+            </button>
+            <div class="faq-panel">
+              <p class="faq-answer">Yes! If you are having app performance issues, internet connectivity problems, or need to manage a margin position urgently, you can execute trades directly over the phone by dialing the Robinhood Support Helpline at (888) 756-7626.</p>
+              <div class="faq-panel-footer">
+                <span>Still have questions?</span>
+                <a href="tel:+18887567626" class="faq-panel-call-link">
+                  <svg class="svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Call Helpline: (888) 756-7626</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- --- FOOTER SECTION --- -->
+    <footer class="footer">
+      <div class="container">
+        
+        <!-- Logo and direct helpline badges -->
+        <div class="footer-top">
+          <div class="footer-logo">
+            <div style="width: 2rem; height: 2rem; background-color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ffffff;">
+              <!-- Feather -->
+              <svg viewBox="0 0 24 24" fill="none" style="width: 1.25rem; height: 1.25rem;" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5 3C18.25 3.5 13.5 6 9.5 11C7 14.125 5.5 17.5 5 19.5C6.75 19.5 10 18.25 12.5 16C16.5 12.5 18.5 7.75 19 5.5C19.25 4.5 19.5 3.5 19.5 3Z" fill="currentColor"/>
+                <path d="M5.5 21C4.25 21.25 3 21.5 2 21.5C3.25 19.25 4.5 17 5 15.5C4.75 17.5 5 19.5 5.5 21Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="footer-logo-text">Robinhood<span class="footer-logo-support">Support</span></span>
+          </div>
+
+          <div class="footer-helpline-grid">
+            <div class="footer-helpline-box">
+              <span class="footer-helpline-label">Robinhood Helpline</span>
+              <a href="tel:+18887567626" class="footer-helpline-phone">(888) 756-7626</a>
+            </div>
+            <div class="footer-helpline-box">
+              <span class="footer-helpline-label">Support Number</span>
+              <a href="tel:+18887567626" class="footer-helpline-phone">(888) 756-7626</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Links list -->
+        <div class="footer-links-row">
+          <a href="#" class="footer-link-tag">Privacy</a>
+          <a href="#" class="footer-link-tag">Terms</a>
+          <a href="#" class="footer-link-tag">Legal</a>
+          <a href="#" class="footer-link-tag">Disclosure</a>
+          <a href="#" class="footer-link-tag">Help Center</a>
+        </div>
+
+        <!-- Legal broker disclaimers -->
+        <div class="footer-disclaimers">
+          <p>
+            All investments involve risk and the past performance of a security or financial product does not guarantee future results or returns. Keep in mind that while diversification may help spread risk, it does not assure a profit or protect against loss in a down market. There is always the potential of losing money when you invest in securities or other financial products. Investors should consider their investment objectives and risks carefully before investing.
+          </p>
+          <p>
+            Robinhood Financial LLC is a registered broker dealer (Member SIPC). Robinhood Securities, LLC provides brokerage clearing services. Robinhood Crypto, LLC provides cryptocurrency trading. All are subsidiaries of Robinhood Markets, Inc. ("Robinhood"). Robinhood is not a bank.
+          </p>
+          <p>
+            If you require telephonic support regarding security breaches, asset management, options trades, margin checks, or compliance filings, you can reach out to our toll-free client help desk on the Robinhood Support Helpline at (888) 756-7626 or dial the Support number (888) 756-7626 anytime.
+          </p>
+          <p>
+            &copy; 2026 Robinhood Support Center. Developed in accordance with Robinhood security and accessibility protocols. All rights reserved.
+          </p>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "name": "Robinhood Support Helpline",
+  "description": "The official Robinhood support and helpline center featuring 24/7 immediate assistance, in-app messaging, callback requests, and security guides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
